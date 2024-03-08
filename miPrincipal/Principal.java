@@ -3,28 +3,41 @@ package miPrincipal;
 import biblioteca.Libro; //importa únicamente la clase Libro
 import biblioteca.*; //importa todas las clases del paquete libro
 
-import distancia.Distancia;
+import java.util.Scanner;
 
 public class Principal {
     
     public static void main(String[] args) {
-        System.out.println("Hola Mundo, soy Lourdes"); //Esto es un comentario
-        //Demostración de tipo de variable
-        /*
-         * Los tipos de datos float y double tienes 3 valores especiale:
-         * infinito positivo
-         * infinito negativo
-         * NaN (Not a Number)
-         */
-        System.out.println(Math.sqrt(8)); //retorna un punto flotante
-        System.out.println(Math.sqrt(-1)); //es un NaN
-        System.out.println(1.1e5 * 1.1e2);
-        System.out.println(1.10000 * 1.10);
-        System.out.println(1.1e200 * 1.1e200); // esto retorna un Infinito positivo
-        System.out.println(-1.1e200 * 1.1e200); // esto retorna un Infinito negativo
+        calcularDistancia();   
+    }
+    public static void calcularDistancia()
+    {
+        /*Proposito: Calcular la distancia a partir
+               de la velocidad y el tiempo
+          Autor:Maria Lourdes Armenta Lindoro
+          Fecha:8/mar/2024
+        */
+        //definir objeto Scanner
+        Scanner teclado = new Scanner(System.in);
 
-        Distancia objDistancia = new Distancia();
-        objDistancia.calcular();
-     
+        //Definir variable de salida
+        float d;
+        //Definir variable de entrada
+        float v,t;
+
+        System.out.print("Proporciona velocidad mts/seg:");
+        v = teclado.nextFloat();
+
+        System.out.print("Proporciona el tiempo seg:");
+        t = teclado.nextFloat();
+
+        d = v*t;
+
+        System.out.println("Distancia = "+d+" mts");
+
+        teclado.close();
+
+
+
     }
 }
