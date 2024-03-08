@@ -3,6 +3,8 @@ package miPrincipal;
 import biblioteca.Libro; //importa únicamente la clase Libro
 import biblioteca.*; //importa todas las clases del paquete libro
 
+import distancia.Distancia;
+
 public class Principal {
     
     public static void main(String[] args) {
@@ -20,6 +22,9 @@ public class Principal {
         System.out.println(1.10000 * 1.10);
         System.out.println(1.1e200 * 1.1e200); // esto retorna un Infinito positivo
         System.out.println(-1.1e200 * 1.1e200); // esto retorna un Infinito negativo
+
+        Distancia objDistancia = new Distancia();
+        objDistancia.calcular();
      
     }
 }

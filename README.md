@@ -1,8 +1,10 @@
-# Proyecto - Simple Hola Mundo
+# Proyecto - Fundamentos de Programación: Conceptos Básicos
+ 
+## Descripción del proyecto
 
-## Descripción del Problema
-
-Este ejercicio simplemente imprime por consola la frase "Hola Mundo".
+Contiene una lista de ejercicios que comprende los conceptos básicos del lenguaje de programación Java.
+Incorportandose a la estructura básica de un programa y demostrando características de: tipos de datos, literales, constantes, variales, identificadores, parámetros, operadores y salidas de datos.
+Los ejercicios aquí descritos ya fueron diseñados en pseudocódigo y diagrama de flujo, basados en la metodología de las 6D.
 
 ## Ejecución
 
@@ -17,12 +19,21 @@ Tu programa debería ejecutarse de la siguiente manera:
 [Editor en línea](https://mermaid.live/)
 ```mermaid
 ---
-title: Calculadora
+title: Principal
 ---
 classDiagram
       class Principal
       
       Principal: +main()
+```
+```mermaid
+---
+title: Distancia
+---
+classDiagram
+      class Distancia
+      
+      Distancia: +calcular()
      
 ```
 [Referencia-Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
@@ -66,24 +77,23 @@ git push origin main
 ### Compilar
 
 ```
-find ./ -type f -name "*.java" > compfiles.txt
-javac -d build -cp lib/junit-platform-console-standalone-1.5.2.jar @compfiles.txt
+find ./ -type f -name "*.java" > compfiles.txt ; javac -encoding utf-8 -d bin -cp lib/junit-platform-console-standalone-1.5.2.jar @compfiles.txt
 ```
 ### Ejecutar ambos comandos en 1 sólo paso:
 ```
-find ./ -type f -name "*.java" > compfiles.txt ; javac -d build -cp lib/junit-platform-console-standalone-1.5.2.jar @compfiles.txt
+
 ```
 
 ### Ejecutar Todas la pruebas locales de 1 Test Case
 ```
-java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --select-class miTest.AppTest
+java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path bin --select-class miTest.AppTest
 ```
 ### Ejecutar 1 prueba local de 1 Test Case
 ```
-java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --select-method miTest.AppTest#appHasAGreeting
+java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path bin --select-method miTest.AppTest#appHasAGreeting
 ```
 ### Ejecutar App
 ```
-java -cp build miPrincipal.Principal
+java -cp bin miPrincipal.Principal
 ```
 Los comandos anteriores están considerados para un ambiente Linux. [Referencia.](https://www.baeldung.com/junit-run-from-command-line)

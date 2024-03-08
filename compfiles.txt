@@ -1,7 +1,8 @@
-./biblioteca/Libro.java
-./biblioteca/Manual.java
+./distancia/Distancia.java
 ./miTest/AppTest.java
 ./otrosProgramas/Programa2.java
 ./otrosProgramas/Programa.java
-./miPrincipal/Programa.java
+./biblioteca/Manual.java
+./biblioteca/Libro.java
 ./miPrincipal/Principal.java
+./miPrincipal/Programa.java
