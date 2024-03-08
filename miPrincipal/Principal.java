@@ -8,7 +8,9 @@ import java.util.Scanner;
 public class Principal {
     
     public static void main(String[] args) {
-        calcularDistancia();   
+        calcularDistancia();
+        
+        calcularExpresion();  
     }
     public static void calcularDistancia()
     {
@@ -35,9 +37,29 @@ public class Principal {
 
         System.out.println("Distancia = "+d+" mts");
 
+        //teclado.close();
+
+    }
+    public static void calcularExpresion(){
+        /*Proposito:Dado los enteros a y b, calcula y escribe
+            el resultado de la expresion (a+b)^2/3b
+        Autor: Lourdes Armenta
+        Fecha: 14/feb/2024
+        */
+        //definir objeto Scanner
+        Scanner teclado = new Scanner(System.in);
+
+        //Definir variable de salida
+        float r;
+        //Definir variable de entrada
+        int a,b;
+        System.out.print("Proporciona valor de a:");
+        a = teclado.nextInt();
+        System.out.print("Proporciona valor de b:");
+        b = teclado.nextInt();
+        r = (a+b)^2/(3*b); 
+        //r = Math.pow((a+b),2)/(3*b);
+        System.out.println("Resultado = "+r);
         teclado.close();
-
-
-
     }
 }
