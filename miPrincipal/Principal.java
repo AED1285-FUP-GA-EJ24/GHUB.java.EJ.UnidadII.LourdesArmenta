@@ -57,8 +57,8 @@ public class Principal {
         a = teclado.nextInt();
         System.out.print("Proporciona valor de b:");
         b = teclado.nextInt();
-        r = (a+b)^2/(3*b); 
-        //r = Math.pow((a+b),2)/(3*b);
+        //r = (a+b)*(a+b)/(3*b); 
+        r = (float)Math.pow((a+b),2)/(3*b);
         System.out.println("Resultado = "+r);
         teclado.close();
     }
