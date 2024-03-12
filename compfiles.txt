@@ -3,6 +3,8 @@
 ./miTest/AppTest.java
 ./otrosProgramas/Programa2.java
 ./otrosProgramas/Programa.java
+./promedio/Promedio.java
+./promedio/Principa.java
 ./biblioteca/Manual.java
 ./biblioteca/Libro.java
 ./miPrincipal/Principal.java
