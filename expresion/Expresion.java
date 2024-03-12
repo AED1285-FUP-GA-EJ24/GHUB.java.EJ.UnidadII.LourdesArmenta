@@ -1,4 +1,5 @@
 package expresion;
+import java.util.Scanner;
 public class Expresion{
     public  void calcularExpresion(){
         /*Proposito:Dado los enteros a y b, calcula y escribe
