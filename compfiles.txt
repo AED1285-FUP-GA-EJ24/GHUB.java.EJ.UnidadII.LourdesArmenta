@@ -5,9 +5,15 @@
 ./otrosProgramas/Programa.java
 ./promedio/Promedio.java
 ./promedio/Principa.java
+./partido/Principal.java
+./partido/Partido.java
+./puntaje/Principal.java
+./puntaje/Puntaje.java
 ./biblioteca/Manual.java
 ./biblioteca/Libro.java
 ./miPrincipal/Principal.java
 ./miPrincipal/Programa.java
 ./expresion/Expresion.java
 ./expresion/Principal.java
+./triangulo/Triangulo.java
+./triangulo/Principal.java
