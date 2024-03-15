@@ -3,6 +3,8 @@
 ./miTest/AppTest.java
 ./otrosProgramas/Programa2.java
 ./otrosProgramas/Programa.java
+./calculadora/Principal.java
+./calculadora/Calculadora.java
 ./promedio/Promedio.java
 ./promedio/Principa.java
 ./partido/Principal.java
